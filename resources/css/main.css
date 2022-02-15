@@ -1,4 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
+h1{
+  font-family: 'Mukta', sans-serif;
+  font-size: 60px;
+}
 .main-content{
   margin: 10px;
   padding: 6px;
+}
+body{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row {margin: 0 -5px;}
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+.list-link{
+  color: black;
+  text-decoration: none;
+}
+.list-link:hover{
+  cursor: pointer;
+}
+.social-icon{
+  color: black;
+  font-size: 25px;
+  margin-right: 10px;
+}
+.social-icon:hover{
+  color: black;
+  cursor: pointer;
+}
+.list-description{
+  font-size: 17px;
 }
