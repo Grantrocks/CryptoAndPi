@@ -49,3 +49,7 @@ body{
 .list-description{
   font-size: 17px;
 }
+.card-image{
+  max-width: 80%;
+  max-height: 80%;
+}
