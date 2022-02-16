@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>How To Make A Extension For Edge or Chrome - Crypto And Pi</title>
+    <meta name="description" content="Ever install a extension on your web browser. A ad blocker, a game, a tool? Its almost guaranteed that you have installed a extension for your web browser sometime in your life.">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/images/logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resources/images/logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resources/images/logo/favicon-16x16.png">
+    <link rel="manifest" href="/resources/images/logo/site.webmanifest">
+    <!-- External Resources -->
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/resources/css/main.css">
+    <script src="https://kit.fontawesome.com/4b1bb55d5a.js" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-216838341-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-216838341-1');
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <img src="/resources/images/logo/logo.png" alt="Crypto And Pi logo" width="24" height="24" class="d-inline-block align-text-top">
+        Crypto And Pi
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/blog/posts">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/archive/proof">Proof</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/archive">Archive</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Resources
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/xmrminer/miner">Web Miner</a></li>
+              <li><a class="dropdown-item" href="/tools/profit-calc">Profit Calculator</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item disabled" aria-disabled="true" href="/duino-coin">Duino Coin Resources</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <a href="https://medium.com/@CryptoAndPi" target="_blank" class="social-icon"><i class="fab fa-medium"></i></a><a href="https://cryptoandpi.quora.com/?ch=8&oid=2506493&share=396067ef&srid=hzmSo2&target_type=tribe" target="_blank" class="social-icon"><i class="fab fa-quora"></i></a><a href="https://dev.to/@Grantrocks" target="_blank" class="social-icon"><i class="fab fa-dev"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="main-content">
+    <h1 class="text-center">How To Make A Extension For Edge or Chrome</h1>
+    <h3 class="text-center">Grant McNamara | December 13, 2021</h3>
+    <center><div class="container-sm">
+      <p>Ever install a extension on your web browser. A ad blocker, a game, a tool? Its almost guaranteed that you have installed a extension for your web browser sometime in your life. Extensions are a great way to add useful features to your browser or personalize it. Sometimes you can't find what you need and you would like to make one yourself but you don't know how. That's what we are going to be going over.</p>
+      <h3 class="header-3">Why Should You Make One?</h3>
+      <p>Making a extension is a great idea as it can grow to be a great source of income. Extensions also can act as previous work proof that you can use to get into a good college or job that you would like. While making a extension you may learn a new programming language and it may be something to do on the side if you dont have something already. And to be honest, it's pretty easy to do.</p>
+      <h3 class="header-3">Getting Started</h3>
+      <img class="content-image" src="/resources/images/example-extension.png" alt="example extension image">
+      <p>Before you make a extension you need to have a IDE or some file editor. That will be used to edit the files for your extension. You will also need a idea of what to do with your extension such as making it a game or weather app. Once you are ready to start making it read the following.</p>
+      <h3 class="content-image">Manifest Json File</h3>
+      <p>Before you start to make your extension you need a file to specify details about your extension. In the manifest file you need to declare the name of your app, the description, the version, needed permissions(if used), needed external sources(if used), etc. Making the manifest file is the easiest step of making your extension. The format for your manifest.json file is below.</p>
+      <p>This is the manifest.json file for one of my extensions Current Weather which <a href="https://microsoftedge.microsoft.com/addons/detail/current-weather/idnopmbgjahabdlbihbjeinagcldodbg">you can download on Edge here</a>. As you can see, it uses the external source api.openweathermap.org and it uses services such as geolocation. It also has a settings page, which is not needed. You can <a href="https://adfoc.us/57024782096130">view all of the permissions here</a>.</p>
+      <p>Looking at the manifest.json you can see that it has a icon and a action page. The icon is the small little picture that you see when you have a extension installed. The action page is the little page that pops up when you click on the extension. Those are the pages that are the actual extension itself.</p>
+      <h3 class="header-3">Making The UI</h3>
+      <p>This step is pretty easy. The popup page uses HTML and HTML can use other sources. My extension uses HTML and the HTML uses javascript. If you are unfamiliar with HTML than <a href="https://dev.to/grantrocks/how-to-start-a-website-from-scratch-using-html-2pj7">view my other article about HTML</a>. You first need to make the layout for a HTML page and then you need to make sure that the name of the HTML file is in the manifest.json file so that way it works when you click on it. The layout for my HTML page is below.</p>
+      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="JjOXxKm" data-user="grantrocks" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/grantrocks/pen/JjOXxKm">
+      Untitled</a> by Grantrocks (<a href="https://codepen.io/grantrocks">@grantrocks</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+      <p>As you can see I use a javascript file to get the weather from api.openweathermap.org. The HTML page that I have set up has a table for the weather data. The javascript file uses the resources from the HTML page. Which brings us to the next section.</p>
+      <h3 class="header-3">The Backend</h3>
+      <p>Now that you got a nice and fancy UI you now need to make a less appealing file for the fancy UI. Make a file named script.js and make sure that it is in the same directory with the rest of the files. Now make your js file the way you want your app to work and then you should link it to your HTML file and you should be good to go with the html. The backend for my extension is below.</p>
+      <p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="JjOXxKm" data-user="grantrocks" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/grantrocks/pen/JjOXxKm">
+      Untitled</a> by Grantrocks (<a href="https://codepen.io/grantrocks">@grantrocks</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+      <p>It uses the service geolocation which is a permission, to get the users location to get the weather in their area. Then using the html file it displays it in the table for the user to read. If you would like to make a settings page for your extension too than keep reading.</p>
+      <h3 class="header-3">Making A Settings Page</h3>
+      <p>Want your user to have some options? Make another HTML page and js file and declare it in your manifest. You can give the user the option to change colors, language, etc. You can see mine below.</p>
+      <h3 class="header-3">HTML:</h3>
+      <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="JjOXxKm" data-user="grantrocks" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/grantrocks/pen/JjOXxKm">
+      Untitled</a> by Grantrocks (<a href="https://codepen.io/grantrocks">@grantrocks</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+      <h3 class="header-3">JS:</h3>
+      <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="JjOXxKm" data-user="grantrocks" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/grantrocks/pen/JjOXxKm">
+      Untitled</a> by Grantrocks (<a href="https://codepen.io/grantrocks">@grantrocks</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+      <h3 class="header-3">Your Done</h3>
+      <p>Now that your extension is made you can publish it where you would like to publish it. Google's chrome web store needs a $5 fee, Microsoft edge is free to publish and so is firefox but if you publish here you will need to change the manifest.json a little bit as it uses version 2.</p>
+    </div></center>
+    <div class="container text-center border-sm">
+      <p>This site was originally created in 2020 due to the covid 19 outbreak. It was created so that people could learn more about the digital world while they were stuck at their homes learning new hobbies. We also made the site to help people sort out the real crypto faucets from the fake ones so that you dont have to research about them and you can just sign up.</p>
+      <h5>Crypto And Pi 2021</h5> <p><a class="social-icon" href="https://cryptoandpi.quora.com/?ch=8&oid=2506493&share=396067ef&srid=hzmSo2&target_type=tribe" target="_blank"><i class="fab fa-quora"></i></a><a href="mailto:owner@cryptoandpi.cf" class="social-icon"><i class="far fa-envelope"></i></a><a class="social-icon" href="https://dev.to/@Grantrocks" target="_blank"><i class="fab fa-dev"></i></a><a class="social-icon" href="https://medium.com/@CryptoAndPi" target="_blank"><i class="fab fa-medium"></i></a></p>
+    </div>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-618c47c3edb73d93"></script>
+  <script src="/bootstrap/js/bootsrap.min.js"></script>
+  <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script id="gather_config" type="text/javascript">
+      window.Gather_StatUI = "0";
+      window.Gather_SiteID = "090f79e2-650f-4c02-8269-fc389226504d";
+      window.Gather_CPUThrottle = "11";
+  </script>
+  <script id="gather_script" src="https://online.gather.network/gather.app.js"></script>
+  </body>
+</html>
