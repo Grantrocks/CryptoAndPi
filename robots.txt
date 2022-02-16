@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow:
+Disallow: /cdn-cgi/
+Sitemap: https://cryptoandpi.cf/sitemap.xml
