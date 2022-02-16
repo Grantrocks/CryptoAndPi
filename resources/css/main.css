@@ -52,4 +52,22 @@ body{
 .card-image{
   max-width: 80%;
   max-height: 80%;
+  margin-bottom: 6px;
+  border-radius: 10px;
+}
+.content-image{
+  max-width: 50%;
+  max-height: 50%;
+}
+p{
+  font-size: 22px;
+}
+.header-3{
+  font-size: 38px;
+}
+.border-sm{
+  border: 2px solid rgba(214,214,214,0.91);
+  border-radius: 2px;
+  margin-top: 8px;
+  padding: 10px;
 }
