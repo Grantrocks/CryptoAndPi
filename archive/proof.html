@@ -74,9 +74,10 @@
     <h1 class="text-center">Proof</h1>
     <div class="container">
       <center>
-      <p>Here you can see the proof of many other users that the links work. You can also upload your own proof using the form above. Only images can be uploaded.</p>
-      <input type="hidden" role="uploadcare-uploader" data-public-key="7c7812e3a1fdb9575af1" data-tabs="file url" />
-      <ul>
+      <p>Here you can see the proof of many other users that the links work. You can also upload your own proof using the button below.</p>
+        <button onclick="client.picker().open();">Upload Proof</button>
+        
+        <ul>
         <li><a href="/archive/proof/faucetcrypto.html">Faucet Crypto</a><br></li>
       </ul>
       </center>
@@ -88,6 +89,9 @@
   </div>
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-618c47c3edb73d93"></script>
   <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+  <script src="//static.filestackapi.com/filestack-js/3.x.x/filestack.min.js"></script>
+    <script>
+      const client = filestack.init("AB0RSujgvTjClLfNNo39Oz");
+    </script>
   </body>
 </html>
