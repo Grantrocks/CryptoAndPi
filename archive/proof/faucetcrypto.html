@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Faucet Crypto Proof</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.10.1/video-js.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-ads/6.7.0/videojs.ads.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/videojs-ima/1.8.3/videojs.ima.min.css" />
+  </head>
+
+  <body>
+	  
+<h1>Faucet Crypto Proofh1>
+  <a href="/">Home</a>
+ <a href="https://ucarecdn.com/ace04d17-952f-4cdb-a138-e607d5148205/Screenshot2022021694550AM.png">Picture Proof</a>
+    <video id="MyVideo" class="video-js vjs-default-skin" poster="https://ucarecdn.com/ace04d17-952f-4cdb-a138-e607d5148205/Screenshot2022021694550AM.png" controls preload="auto" width="640" height="360">
+      <source src="/resources/videos/faucetcrypto.mp4" type="video/mp4" ></source>
+    </video>
+	
+	<script src="https://imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.10.1/video.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-ads/6.7.0/videojs.ads.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-ima/1.8.3/videojs.ima.min.js"></script>
+	
+	<script>
+		var ua = navigator.userAgent;
+		var player = videojs("MyVideo");
+		var options = {id:"MyVideo",adTagUrl:"https://www.videosprofitnetwork.com/watch.xml?key=b10c66030258d46ef3224f1008fb71d5"};
+		player.ima(options);
+
+		var contentPlayer =  document.getElementById("content_video_html5_api");
+		if ((ua.match(/iPad/i) || ua.match(/Android/i)) && contentPlayer.hasAttribute("controls")) {
+			contentPlayer.removeAttribute("controls");
+		} // fi
+
+		var initAdDisplayContainer = function() {
+			player.ima.initializeAdDisplayContainer();
+			wrapperDiv.removeEventListener(startEvent, initAdDisplayContainer);
+		}
+
+		var startEvent = "click";
+		if (ua.match(/iPhone/i) || ua.match(/iPad/i) || ua.match(/Android/i)) { startEvent = "touchend"; }
+
+		var wrapperDiv = document.getElementById("MyVideo");
+		wrapperDiv.addEventListener(startEvent, initAdDisplayContainer);
+    </script>
+  </body>
+</html>
