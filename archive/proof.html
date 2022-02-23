@@ -75,7 +75,7 @@
     <div class="container">
       <center>
       <p>Here you can see the proof of many other users that the links work. You can also upload your own proof using the button below.</p>
-        <button onclick="open()">Upload Proof</button>
+        <button onclick="client.picker().open();">Upload Proof</button>
         <ul>
         <li><a href="/archive/proof/faucetcrypto.html">Faucet Crypto</a><br></li>
       </ul>
@@ -91,9 +91,6 @@
   <script src="//static.filestackapi.com/filestack-js/3.x.x/filestack.min.js"></script>
     <script>
       const client = filestack.init("AB0RSujgvTjClLfNNo39Oz");
-      function open(){
-        client.picker().open();
-      };
     </script>
   </body>
 </html>
