@@ -81,6 +81,23 @@
       <h3 class="header-3">Thanks For Learning About The Site</h3>
       Please share this site to help it grow because we really want to help as many people as possible learn about the new digital world and its free. Also in case you were wondering the site creator who wrote this is Grant McNamara.</p>
     </div>
+    <iframe
+	src="https://viewm.moonicorn.network/#%7B%22options%22%3A%7B%22publisherAddr%22%3A%220x1965a2C2fF01e28fe1fA15010702CC2d030813ba%22%2C%22whitelistedTokens%22%3A%5B%220x6B175474E89094C44Da98b954EedeAC495271d0F%22%5D%2C%22whitelistedType%22%3A%22legacy_728x90%22%2C%22randomize%22%3Atrue%2C%22targeting%22%3A%5B%5D%2C%22width%22%3A%22728%22%2C%22height%22%3A%2290%22%2C%22minPerImpression%22%3A%220%22%2C%22fallbackUnit%22%3Anull%2C%22marketSlot%22%3A%22QmcjGzTwNbSJbJdYdRkFY4PYdG5c5pmzWMpHkLzfd3tbhy%22%7D%7D"
+	width="728"
+	height="90"
+	scrolling="no"
+	frameborder="0"
+	style="border: 0;"
+	onload="window.addEventListener('message', function(ev) { 
+		if (ev.data.hasOwnProperty('adexHeight') && ('https://viewm.moonicorn.network' === ev.origin)) {
+			for (let f of document.getElementsByTagName('iframe')) {	
+				if (f.contentWindow === ev.source) {
+					f.height = ev.data.adexHeight;
+				}
+			}	
+		}
+	}, false)"
+></iframe>
     <div class="container text-center">
       <p>This site was originally created in 2020 due to the covid 19 outbreak. It was created so that people could learn more about the digital world while they were stuck at their homes learning new hobbies. We also made the site to help people sort out the real crypto faucets from the fake ones so that you dont have to research about them and you can just sign up.</p>
       <h5>Crypto And Pi 2021</h5>
