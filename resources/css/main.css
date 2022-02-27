@@ -83,3 +83,6 @@ p{
   width: 100%;
   height: 100%;
 }
+.center-element{
+  margin: auto;
+}
