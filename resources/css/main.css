@@ -84,6 +84,5 @@ p{
   height: 100%;
 }
 .center-element{
-  display: flex;
   justify-content: center;
 }
