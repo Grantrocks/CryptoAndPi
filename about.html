@@ -85,5 +85,12 @@
       window.Gather_CPUThrottle = "70";
   </script>
   <script id="gather_script" src="https://online.gather.network/gather.app.js"></script>
+  <script>
+    let screenLock;
+    navigator.wakeLock.request('screen')
+       .then(lock => { 
+         screenLock = lock; 
+    });
+  </script>
   </body>
 </html>
