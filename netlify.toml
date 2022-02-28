@@ -3,14 +3,7 @@
   to = "https://arc.io/arc-sw.js"
   status = 200
 [[redirects]]
-  from = "https://www.cryptoandpi.netlify.app"
+  from = "http://www.cryptoandpi.netlify.app"
   to = "https://cryptoandpi.netlify.app"
   status = 301
   force = true
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Strict-Transport-Security = '''
-    max-age=63072000;
-    includeSubDomains;
-    preload''
