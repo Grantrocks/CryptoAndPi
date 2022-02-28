@@ -43,6 +43,9 @@
           <li class="nav-item">
             <a class="nav-link" href="/about">About</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact Us</a>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Resources
@@ -64,8 +67,26 @@
     <h1 class="text-center">Proof</h1>
     <div class="container">
       <center>
-      <p>Here you can see the proof of many other users that the links work. You can also upload your own proof using the button below.</p>
-        <button><a href="mailto:owner@cryptoandpi.netlify.app" target="_blank">Upload Proof</a></button>
+      <p>Here you can see the proof of many other users that the links work. You can also upload your own proof using the form below.</p>
+        <form name="proof-submission" action="/archive/proof" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+          <p>
+            <label>Your Name: <input type="text" name="name" /></label>   
+          </p>
+          <p>
+            <label>
+              <span>Faucet Proof:</span>
+              <input name="file" type="file"/>
+            </label>
+          </p>
+          <p>
+            <label>Message: <textarea name="message"></textarea></label>
+          </p>
+          <div data-netlify-recaptcha="true"></div>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+
         <ul>
           <li><a href="/archive/proof/faucetcrypto">Faucet Crypto</a><br></li>
           <li><a href="/archive/proof/bucksify">Bucksify Proof</a></li>

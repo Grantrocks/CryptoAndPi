@@ -88,3 +88,9 @@ p{
   display: flex;
   justify-content: center;
 }
+.fa-brands{
+  font-size: 30px;
+}
+.fa-solid{
+  font-size: 30px;
+}
