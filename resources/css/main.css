@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
-@media only screen and (max-device-width: 480px) {
-    .mobile { display: none; }
+.content-desktop {display: block;}
+.content-mobile {display: none;}
+
+@media screen and (max-width: 768px) {
+
+.content-desktop {display: none;}
+.content-mobile {display: block;}
+
 }
 h1{
   font-family: 'Mukta', sans-serif;
@@ -96,7 +102,4 @@ p{
 }
 .fa-solid{
   font-size: 30px;
-}
-.mobile{
-  margin: auto; 
 }
