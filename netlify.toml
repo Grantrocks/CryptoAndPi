@@ -2,3 +2,8 @@
   from = "/arc-sw.js"
   to = "https://arc.io/arc-sw.js"
   status = 200
+[[redirects]]
+  from = "https://www.cryptoandpi.netlify.app"
+  to = "https://cryptoandpi.netlify.app"
+  status = 301
+  force = true
