@@ -74,7 +74,7 @@
       <h3 class="header-3">Thanks For Learning About The Site</h3>
       Please share this site to help it grow because we really want to help as many people as possible learn about the new digital world and its free. Also in case you were wondering the site creator who wrote this is Grant McNamara.</p>
     </div>
-    <center>You can donate to the site by accepting the green message and clicking the button below.<br><button onclick="getScreenLock()">Support Us</button></center>
+    <center>You can donate to the site by accepting the green message and leaving this tab open.</center>
     
     <div class="container text-center">
       <p>This site was originally created in 2020 due to the covid 19 outbreak. It was created so that people could learn more about the digital world while they were stuck at their homes learning new hobbies. We also made the site to help people sort out the real crypto faucets from the fake ones so that you dont have to research about them and you can just sign up.</p>
@@ -99,17 +99,11 @@
 <script data-cfasync="false" type="text/javascript" src="//adconity.com/display/items.php?10402&21098&300&250&4&0&5"></script>
 <!-- ADconity.com - Ad Display Code -->
 <script>
-  async function getScreenLock() {
-  if(isScreenLockSupported()){
-    let screenLock;
-    try {
-       screenLock = await navigator.wakeLock.request('screen');
-    } catch(err) {
-       console.log(err.name, err.message);
-    }
-    return screenLock;
-  }
-}
+  let screenLock;
+navigator.wakeLock.request('screen')
+   .then(lock => { 
+     screenLock = lock; 
+});
 </script>
   </body>
 </html>
