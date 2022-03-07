@@ -57,6 +57,15 @@
               <li><a class="dropdown-item" href="/duino-coin">Duino Coin Resources</a></li>
             </ul>
           </li>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-search"></i>
+          </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <script async src="https://cse.google.com/cse.js?cx=c6925e685ef3cc454"></script>
+              <div class="gcse-search"></div>  
+            </ul>
+        </li>
         </ul>
         <div class="d-flex">
         </div>
@@ -67,13 +76,8 @@
     <h1 class="text-center">Price Converter</h1>
     <div class="container">
       <center>
-        <select id="crypto" onclick="select()">
-        <option value=”bitcoin”>Bitcoin</option>
-        <option value=”litecoin”>Litecoin</option>
-        <option value=”ethereum”>Ethereum</option>
-        <option value=”solana”>Solana</option>
-      </select>
-  <coingecko-coin-converter-widget id="cgkw" coin-id="" currency="usd" background-color="#ffffff" font-color="#4c4c4c" locale="en"></coingecko-coin-converter-widget>
+        <script src="https://cdn.jsdelivr.net/gh/coinponent/coinponent@1.2.6/dist/coinponent.js"></script>
+        <coin-ponent dark-mode></coin-ponent>
       </center>
     </div>
     <div class="container text-center">
@@ -82,21 +86,5 @@
     </div>
   </div>
   <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- ADconity.com - Ad Display Code -->
-<script data-cfasync="false" type="text/javascript" src="//adconity.com/display/items.php?10402&21098&300&250&4&0&5"></script>
-<!-- ADconity.com - Ad Display Code -->
-    <script>
-      function select(){
-        var widget = document.getElementById("cgkw");
-        var dropdown = document.getElementById("crypto");
-        var coin =  dropdown.value;
-        alert(coin);
-        widget.setAttribute("coin-id", coin.value);
-        var head= document.getElementsByTagName('head')[0];
-        var script= document.createElement('script');
-        script.src= 'https://widgets.coingecko.com/coingecko-coin-converter-widget.js';
-        head.appendChild(script)
-      };
-    </script>
   </body>
 </html>
